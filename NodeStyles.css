@@ -1,40 +1,29 @@
-
 .node {
-  background-color: #f8f9fa;
-  border: 2px solid #d1d5db;
-  border-radius: 12px;
-  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
   width: 200px;
-  font-family: "Segoe UI", sans-serif;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .node-header {
   font-weight: bold;
   margin-bottom: 8px;
   text-align: center;
-  color: #1f2937;
 }
 
 .node-handles {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 8px;
 }
 
 .handle {
   width: 10px;
   height: 10px;
-  background-color: #4f46e5;
+  background-color: #007bff;
   border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
 }
 
-.node-content textarea {
-  width: 100%;
-  min-height: 50px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  padding: 4px;
-  font-family: inherit;
-  resize: none;
-}
