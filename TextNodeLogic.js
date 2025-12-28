@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Handle } from "react-flow-renderer";
 import "./NodeStyles.css";
@@ -6,7 +5,6 @@ import "./NodeStyles.css";
 const TextNodeLogic = ({ id, label }) => {
   const [text, setText] = useState("");
   const [variables, setVariables] = useState([]);
-
 
   useEffect(() => {
     const matches = text.match(/{{\s*[\w]+\s*}}/g) || [];
@@ -26,10 +24,12 @@ const TextNodeLogic = ({ id, label }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Type here with {{variables}}..."
-        style={{ minHeight: "50px", width: "100%" }}
+        style={{ width: "100%", minHeight: "50px" }}
       />
     </div>
   );
 };
 
 export default TextNodeLogic;
+
+
